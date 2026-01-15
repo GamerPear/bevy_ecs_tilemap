@@ -458,7 +458,7 @@ impl RenderChunk2d {
                 .mesh
                 .get_mesh_vertex_buffer_layout(mesh_vertex_buffer_layouts);
             self.render_mesh = Some(RenderMesh {
-                #[cfg(feature = "morph")]
+                //#[cfg(feature = "morph")]
                 morph_targets: None,
                 vertex_count: self.mesh.count_vertices() as u32,
                 buffer_info,
